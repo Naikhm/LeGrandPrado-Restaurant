@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover"/>
+<meta name="description" content="Restaurant Le Grand Prado — Shawarma & restauration rapide à Sidi Bel Abbès, Algérie. Ouvert tous les jours jusqu'à minuit."/>
+<meta name="keywords" content="shawarma, restaurant, sidi bel abbes, algerie, tacos, livraison, مطعم, شاورما"/>
+<meta name="theme-color" content="#8B1E1E"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:title" content="Restaurant Le Grand Prado"/>
+<meta property="og:description" content="La meilleure shawarma et restauration rapide de la ville."/>
+<meta property="og:type" content="restaurant.restaurant"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<title>Restaurant Le Grand Prado · Shawarma à Sidi Bel Abbès</title>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Restaurant Le Grand Prado","address":{"@type":"PostalAddress","streetAddress":"Ave Mohamed Khamista","addressLocality":"Sidi Bel Abbès","postalCode":"22000","addressCountry":"DZ"},"telephone":"+213549526900","openingHours":"Mo-Su 00:00-00:00","servesCuisine":"Middle Eastern, Fast Food"}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- Skip link for keyboard users (a11y polish) -->
+<a class="skip-link" href="#hero">Aller au contenu</a>
+
+<!-- ═══════════════════════════════════════════ NAVBAR ═══════════════════════════════════════════ -->
+<nav id="navbar" aria-label="Navigation principale">
+  <a href="#hero" class="nav-logo" aria-label="Le Grand Prado — accueil">
+    <span class="nav-logo-main">Le Grand Prado</span>
+    <span class="nav-logo-sub" data-key="tagline-short">Shawarma & Fast-Food</span>
+  </a>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero"    data-key="nav-home">Accueil</a></li>
+    <li><a href="#about"   data-key="nav-about">À propos</a></li>
+    <li><a href="#menu"    data-key="nav-menu">Menu</a></li>
+    <li><a href="#gallery" data-key="nav-gallery">Galerie</a></li>
+    <li><a href="#reviews" data-key="nav-reviews">Avis</a></li>
+    <li><a href="#contact" data-key="nav-contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-actions">
+    <div class="lang-switch" role="group" aria-label="Langue">
+      <button class="lang-btn active" id="btnFr" aria-pressed="true">FR</button>
+      <button class="lang-btn" id="btnAr" aria-pressed="false">AR</button>
+    </div>
+    <a href="https://wa.me/213549526900" target="_blank" rel="noopener" class="nav-wa" data-key="nav-wa" aria-label="Contact WhatsApp">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L0 24l6.335-1.507A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.79 9.79 0 0 1-4.988-1.364l-.356-.212-3.762.895.956-3.67-.234-.376A9.782 9.782 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileDrawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Menu mobile">
+  <button class="drawer-close" id="drawerClose" aria-label="Fermer le menu">✕</button>
+  <nav>
+    <a href="#hero"    class="mobile-link" data-key="nav-home">Accueil</a>
+    <a href="#about"   class="mobile-link" data-key="nav-about">À propos</a>
+    <a href="#menu"    class="mobile-link" data-key="nav-menu">Menu</a>
+    <a href="#gallery" class="mobile-link" data-key="nav-gallery">Galerie</a>
+    <a href="#reviews" class="mobile-link" data-key="nav-reviews">Avis</a>
+    <a href="#contact" class="mobile-link" data-key="nav-contact">Contact</a>
+  </nav>
+  <div class="drawer-lang">
+    <button id="drawerFr" class="active" onclick="setLang('fr')">FR</button>
+    <button id="drawerAr" onclick="setLang('ar')">AR</button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     HERO — foggy treatment
+═══════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <video id="heroVideo" autoplay muted loop playsinline preload="metadata"
+           data-src-desktop="shawarma-pc.mp4"
+           data-src-mobile="shawarma-mobile.mp4"></video>
+  </div>
+  <!-- === FOG OVERLAY: warm cream atmosphere + grain + bottom lift === -->
+  <div class="hero-fog-warm" aria-hidden="true"></div>
+  <div class="hero-fog-grain" aria-hidden="true"></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-rule" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Sidi Bel Abbès · Algérie</p>
+    <h1 class="hero-title">Restaurant<br/><em>Le Grand Prado</em></h1>
+    <p class="hero-tagline" data-key="hero-tagline">La meilleure shawarma et restauration rapide de la ville</p>
+    <div class="hero-cta">
+      <a href="#menu" class="btn-primary" data-key="hero-btn1">🍽 Voir le Menu</a>
+      <a href="https://wa.me/213549526900" target="_blank" rel="noopener" class="btn-secondary" data-key="hero-btn2">📱 Commander Maintenant</a>
+    </div>
+  </div>
+
+  <!-- Scroll hint (decorative, hidden <520px) -->
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="hero-scroll-dot"></span>
+  </div>
+</section>
+
+<div class="section-divider divider-ornament reveal">
+  <span class="orn-line"></span>
+  <span class="orn-mark">
+    <svg viewBox="0 0 60 24" aria-hidden="true">
+      <path d="M2 12 H22" stroke="currentColor" stroke-width="1"/>
+      <path d="M38 12 H58" stroke="currentColor" stroke-width="1"/>
+      <path d="M30 2 L34 12 L30 22 L26 12 Z" fill="currentColor"/>
+      <circle cx="30" cy="12" r="2" fill="#FFF9F2"/>
+    </svg>
+    <span class="orn-mono">Le Grand Prado</span>
+  </span>
+  <span class="orn-line"></span>
+</div>
+
+<!-- ═══════════════════════════════════════════ ABOUT ═══════════════════════════════════════════ -->
+<section class="section about-section" id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-img-col reveal">
+        <!-- Decorative corner mark behind the main image (intentional small accent) -->
+        <span class="corner-mark corner-mark--tl" aria-hidden="true"></span>
+        <img class="about-img-main" src="https://i.imgur.com/90JC8i3.png" alt="Salle du Restaurant Le Grand Prado" loading="lazy"/>
+        <img class="about-img-accent" src="https://i.imgur.com/biek0IC.jpeg" alt="Shawarma fraîchement préparée" loading="lazy"/>
+      </div>
+      <div class="reveal d1">
+        <p class="section-eyebrow" data-key="about-eyebrow">Notre Histoire</p>
+        <h2 class="section-title" data-key="about-title">Une passion pour l'authenticité</h2>
+        <div class="about-gold-line"></div>
+        <p class="about-text" data-key="about-text">
+          Restaurant Le Grand Prado vous accueille avec des ingrédients frais, une shawarma authentique et un service familial chaleureux. Chaque repas est préparé avec soin afin d'offrir une expérience unique à chaque visite.
+        </p>
+        <div class="about-pillars">
+          <div class="about-pillar">
+            <span class="pillar-icon" aria-hidden="true">🌿</span>
+            <div>
+              <div class="pillar-title" data-key="pillar1-title">Ingrédients frais</div>
+              <div class="pillar-desc" data-key="pillar1-desc">Sélectionnés chaque matin au marché local pour garantir fraîcheur et saveur.</div>
+            </div>
+          </div>
+          <div class="about-pillar">
+            <span class="pillar-icon" aria-hidden="true">🔥</span>
+            <div>
+              <div class="pillar-title" data-key="pillar2-title">Shawarma authentique</div>
+              <div class="pillar-desc" data-key="pillar2-desc">Recettes traditionnelles, cuisson à la broche, épices soigneusement dosées.</div>
+            </div>
+          </div>
+          <div class="about-pillar">
+            <span class="pillar-icon" aria-hidden="true">❤️</span>
+            <div>
+              <div class="pillar-title" data-key="pillar3-title">Service familial</div>
+              <div class="pillar-desc" data-key="pillar3-desc">Accueil chaleureux, ambiance conviviale et service attentionné pour tous.</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats reveal d2">
+          <div class="stat"><div class="stat-num" data-count="12">0</div><div class="stat-label" data-key="stat1">Années de saveur</div></div>
+          <div class="stat-sep" aria-hidden="true"></div>
+          <div class="stat"><div class="stat-num" data-count="50" data-suffix="k+">0</div><div class="stat-label" data-key="stat2">Plats servis</div></div>
+          <div class="stat-sep" aria-hidden="true"></div>
+          <div class="stat"><div class="stat-num" data-count="100" data-suffix="%">0</div><div class="stat-label" data-key="stat3">Halal & frais</div></div>
+          <div class="stat-sep" aria-hidden="true"></div>
+          <div class="stat"><div class="stat-num" data-count="31" data-suffix="+">0</div><div class="stat-label" data-key="stat4">Avis Google</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider divider-strip reveal">
+  <div class="strip-photos">
+    <div class="strip-tile" style="background-image:url(https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=800&q=70&auto=format&fit=crop)"></div>
+    <div class="strip-tile" style="background-image:url(https://i.imgur.com/DfisgGL.png)"></div>
+    <div class="strip-tile" style="background-image:url(https://i.imgur.com/nOMf2U2.png)"></div>
+  </div>
+  <div class="strip-overlay"></div>
+  <div class="strip-caption">
+    <span class="strip-eyebrow">Notre savoir-faire</span>
+    <span class="strip-title">Recettes traditionnelles, saveurs inoubliables</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ MENU ═══════════════════════════════════════════ -->
+<section class="section menu-section" id="menu">
+  <div class="section-inner">
+    <div class="section-header reveal" style="margin-bottom:0.5rem">
+      <p class="section-eyebrow" data-key="menu-eyebrow">Découvrez</p>
+      <h2 class="section-title" data-key="menu-title">Notre Menu</h2>
+      <p class="section-sub" data-key="menu-sub">Tous nos prix sont en Dinars Algériens (DA)</p>
+    </div>
+
+    <!-- Tabs become horizontally-scrollable on small screens (no overflow) -->
+    <div class="menu-tabs reveal d1" id="menuTabs" role="tablist">
+      <button class="tab-btn active" data-tab="sandwich" data-key-fr="Sandwichs" data-key-ar="سندويش شاورما">Sandwichs</button>
+      <button class="tab-btn" data-tab="tacos" data-key-fr="Tacos" data-key-ar="تاكوس">Tacos</button>
+      <button class="tab-btn" data-tab="plats" data-key-fr="Les Plats" data-key-ar="الأطباق">Les Plats</button>
+      <button class="tab-btn" data-tab="supplements" data-key-fr="Suppléments" data-key-ar="إضافات">Suppléments</button>
+      <button class="tab-btn" data-tab="boissons" data-key-fr="Boissons" data-key-ar="مشروبات">Boissons</button>
+    </div>
+
+    <div class="menu-panels" id="menuPanels">
+
+      <!-- SANDWICHS -->
+      <div class="menu-panel active" id="panel-sandwich">
+        <div class="menu-grid">
+          <div class="menu-card reveal">
+            <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=500&q=80&auto=format&fit=crop" alt="Shawarma frites" loading="lazy"/></div>
+            <div class="menu-card-body">
+              <div class="menu-card-name" data-key="sw1-name">Shawarma Frites</div>
+              <div class="menu-card-desc" data-key="sw1-desc">Shawarma poulet grillé avec frites croustillantes, sauce ail et légumes frais.</div>
+              <div class="menu-card-footer">
+                <div class="menu-price">300<span>DA</span></div>
+                <button class="menu-order-btn" onclick="waOrder()" data-key="order-btn">Commander</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card reveal d1">
+            <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1719282431723-9d0f4370d4bc?q=80&w=1170&auto=format&fit=crop" alt="Shawarma classique" loading="lazy"/></div>
+            <div class="menu-card-body">
+              <div class="menu-card-name" data-key="sw2-name">Shawarma Sans Frites</div>
+              <div class="menu-card-desc" data-key="sw2-desc">Shawarma classique au poulet ou bœuf, sauce maison et pain frais.</div>
+              <div class="menu-card-footer">
+                <div class="menu-price">400<span>DA</span></div>
+                <button class="menu-order-btn" onclick="waOrder()" data-key="order-btn">Commander</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TACOS -->
+      <div class="menu-panel" id="panel-tacos">
+        <div class="menu-grid">
+          <div class="menu-card reveal">
+            <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=500&q=80&auto=format&fit=crop" alt="Mini tacos poulet" loading="lazy"/></div>
+            <div class="menu-card-body">
+              <div class="menu-card-name" data-key="ta1-name">Mini Tacos Poulet</div>
+              <div class="menu-card-desc" data-key="ta1-desc">Mini tacos garnis de poulet tendre, fromage fondu et sauce secrète.</div>
+              <div class="menu-card-footer">
+                <div class="menu-price">300<span>DA</span></div>
+                <button class="menu-order-btn" onclick="waOrder()" data-key="order-btn">Commander</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card reveal d1">
+            <div class="menu-card-img"><img src="https://img.cuisineaz.com/1200x900/2019/04/17/i146583-tacos-poulet-curry.webp" alt="Tacos poulet" loading="lazy"/></div>
+            <div class="menu-card-body">
+              <div class="menu-card-name" data-key="ta2-name">Tacos Poulet</div>
+              <div class="menu-card-desc" data-key="ta2-desc">Grand tacos au poulet grillé, légumes croquants, fromage et sauces assorties.</div>
+              <div class="menu-card-footer">
+                <div class="menu-price">500<span>DA</span></div>
+                <button class="menu-order-btn" onclick="waOrder()" data-key="order-btn">Commander</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card reveal d2">
+            <div class="menu-card-img"><img src="https://i.imgur.com/DfisgGL.png" alt="Tacos crispy" loading="lazy"/></div>
+            <div class="menu-card-body">
+              <div class="menu-card-name" data-key="ta3-name">Tacos Crispy</div>
+              <div class="menu-card-desc" data-key="ta3-desc">Poulet crispy doré, salade, tomate, sauce ranch et fromage fondant.</div>
+              <div class="menu-card-footer">
+                <div class="menu-price">550<span>DA</span></div>
+                <button class="menu-order-btn" onclick="waOrder()" data-key="order-btn">Commander</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PLATS -->
+      <div class="menu-panel" id="panel-plats">
+        <div class="menu-grid">
+          <div class="menu-card reveal">
+            <div class="menu-card-img"><img src="https://food.yassir.io/uploads/images/food/17392681156356135d310-5036-4819-b2db-6f0f0653d258.jpeg" alt="Plat Arabi" loading="lazy"/></div>
+            <div class="menu-card-body">
+              <div class="menu-card-name" data-key="pl1-name">Plat Arabi</div>
+              <div class="menu-card-desc" data-key="pl1-desc">Assiette orientale complète avec viande, riz, salade et pain.</div>
+              <div class="menu-card-footer">
+                <div class="menu-price">700–1600<span>DA</span></div>
+                <button class="menu-order-btn" onclick="waOrder()" data-key="order-btn">Commander</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card reveal d1">
+            <div class="menu-card-img"><img src="https://i.imgur.com/nOMf2U2.png" alt="Plat shawarma" loading="lazy"/></div>
+            <div class="menu-card-body">
+              <div class="menu-card-name" data-key="pl2-name">Plat Shawarma</div>
+              <div class="menu-card-desc" data-key="pl2-desc">Généreuse assiette de shawarma, riz basmati, salade fraîche et sauces.</div>
+              <div class="menu-card-footer">
+                <div class="menu-price">800–1600<span>DA</span></div>
+                <button class="menu-order-btn" onclick="waOrder()" data-key="order-btn">Commander</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card reveal d2">
+            <div class="menu-card-img"><img src="https://i.imgur.com/AA5qLX8.png" alt="Plat crispy" loading="lazy"/></div>
+            <div class="menu-card-body">
+              <div class="menu-card-name" data-key="pl3-name">Plat Crispy</div>
+              <div class="menu-card-desc" data-key="pl3-desc">Poulet crispy, frites maison, coleslaw et sauce barbecue.</div>
+              <div class="menu-card-footer">
+                <div class="menu-price">800–1600<span>DA</span></div>
+                <button class="menu-order-btn" onclick="waOrder()" data-key="order-btn">Commander</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card reveal d3">
+            <div class="menu-card-img"><img src="https://i.imgur.com/Mzy1H4Z.png" alt="Plat mixte" loading="lazy"/></div>
+            <div class="menu-card-body">
+              <div class="menu-card-name" data-key="pl4-name">Plat Shawarma &amp; Crispy</div>
+              <div class="menu-card-desc" data-key="pl4-desc">Le meilleur des deux mondes — shawarma + crispy, accompagnements au choix.</div>
+              <div class="menu-card-footer">
+                <div class="menu-price">1000–2000<span>DA</span></div>
+                <button class="menu-order-btn" onclick="waOrder()" data-key="order-btn">Commander</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUPPLEMENTS -->
+      <div class="menu-panel" id="panel-supplements">
+        <div class="menu-list">
+          <div class="menu-list-item reveal"><span class="menu-list-name" data-key="sup1">Frites</span><span class="menu-list-price">100–200 DA</span></div>
+          <div class="menu-list-item reveal d1"><span class="menu-list-name" data-key="sup2">Riz</span><span class="menu-list-price">100–200 DA</span></div>
+          <div class="menu-list-item reveal d2"><span class="menu-list-name" data-key="sup3">Salade</span><span class="menu-list-price">100–200 DA</span></div>
+        </div>
+      </div>
+
+      <!-- BOISSONS -->
+      <div class="menu-panel" id="panel-boissons">
+        <div class="menu-list">
+          <div class="menu-list-item reveal"><span class="menu-list-name" data-key="dr1">Boisson Gazeuse Grand Format</span><span class="menu-list-price">150 DA</span></div>
+          <div class="menu-list-item reveal d1"><span class="menu-list-name" data-key="dr2">Boisson Gazeuse Petit Format</span><span class="menu-list-price">70 DA</span></div>
+          <div class="menu-list-item reveal d2"><span class="menu-list-name" data-key="dr3">Canette 33 cl</span><span class="menu-list-price">100 DA</span></div>
+          <div class="menu-list-item reveal d3"><span class="menu-list-name" data-key="dr4">Canette 24 cl</span><span class="menu-list-price">80 DA</span></div>
+          <div class="menu-list-item reveal d4"><span class="menu-list-name" data-key="dr5">Jus Grand Format</span><span class="menu-list-price">150 DA</span></div>
+          <div class="menu-list-item reveal"><span class="menu-list-name" data-key="dr6">Jus Petit Format</span><span class="menu-list-price">80 DA</span></div>
+          <div class="menu-list-item reveal d1"><span class="menu-list-name" data-key="dr7">Eau Grand Format</span><span class="menu-list-price">50 DA</span></div>
+          <div class="menu-list-item reveal d2"><span class="menu-list-name" data-key="dr8">Eau Petit Format</span><span class="menu-list-price">30 DA</span></div>
+        </div>
+      </div>
+
+    </div><!-- /menu-panels -->
+  </div>
+</section>
+
+<div class="section-divider divider-marquee" aria-hidden="true">
+  <div class="marquee-track"><span>Shawarma</span><span class="dot">✦</span><span>Tacos</span><span class="dot">✦</span><span>Crispy</span><span class="dot">✦</span><span>Frais</span><span class="dot">✦</span><span>Halal</span><span class="dot">✦</span><span>شاورما</span><span class="dot">✦</span><span>Fait Maison</span><span class="dot">✦</span><span>Livraison</span><span class="dot">✦</span><span>🔥</span><span class="dot">✦</span><span>Shawarma</span><span class="dot">✦</span><span>Tacos</span><span class="dot">✦</span><span>Crispy</span><span class="dot">✦</span><span>Frais</span><span class="dot">✦</span><span>Halal</span><span class="dot">✦</span><span>شاورما</span><span class="dot">✦</span><span>Fait Maison</span><span class="dot">✦</span><span>Livraison</span><span class="dot">✦</span><span>🔥</span><span class="dot">✦</span><span>Shawarma</span><span class="dot">✦</span><span>Tacos</span><span class="dot">✦</span><span>Crispy</span><span class="dot">✦</span><span>Frais</span><span class="dot">✦</span><span>Halal</span><span class="dot">✦</span><span>شاورما</span><span class="dot">✦</span><span>Fait Maison</span><span class="dot">✦</span><span>Livraison</span><span class="dot">✦</span><span>🔥</span><span class="dot">✦</span></div>
+</div>
+
+<!-- ═══════════════════════════════════════════ GALLERY ═══════════════════════════════════════════ -->
+<section class="section gallery-section" id="gallery">
+  <div class="section-inner">
+    <div class="reveal" style="margin-bottom:3rem">
+      <p class="section-eyebrow gallery-eyebrow" data-key="gallery-eyebrow">Nos Photos</p>
+      <h2 class="section-title light" data-key="gallery-title">Galerie</h2>
+    </div>
+    <div class="gallery-masonry">
+      <div class="gallery-item reveal" onclick="openLb(this)" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=500&q=80&auto=format&fit=crop" alt="Shawarma" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-zoom" aria-hidden="true">🔍</span></div>
+      </div>
+      <div class="gallery-item reveal d1" onclick="openLb(this)" tabindex="0">
+        <img src="https://i.imgur.com/DfisgGL.png" alt="Tacos" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-zoom" aria-hidden="true">🔍</span></div>
+      </div>
+      <div class="gallery-item reveal d2" onclick="openLb(this)" tabindex="0">
+        <img src="https://i.imgur.com/nOMf2U2.png" alt="Plat shawarma" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-zoom" aria-hidden="true">🔍</span></div>
+      </div>
+      <div class="gallery-item reveal d3" onclick="openLb(this)" tabindex="0">
+        <img src="https://i.imgur.com/VCxaMss.png" alt="Boisson" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-zoom" aria-hidden="true">🔍</span></div>
+      </div>
+      <div class="gallery-item reveal" onclick="openLb(this)" tabindex="0">
+        <img src="https://images.unsplash.com/photo-1719282431723-9d0f4370d4bc?q=80&w=1170&auto=format&fit=crop" alt="Shawarma" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-zoom" aria-hidden="true">🔍</span></div>
+      </div>
+      <div class="gallery-item reveal d1" onclick="openLb(this)" tabindex="0">
+        <img src="https://img.cuisineaz.com/1200x900/2019/04/17/i146583-tacos-poulet-curry.webp" alt="Tacos" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-zoom" aria-hidden="true">🔍</span></div>
+      </div>
+      <div class="gallery-item reveal d2" onclick="openLb(this)" tabindex="0">
+        <img src="https://i.imgur.com/AA5qLX8.png" alt="Plat crispy" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-zoom" aria-hidden="true">🔍</span></div>
+      </div>
+      <div class="gallery-item reveal d3" onclick="openLb(this)" tabindex="0">
+        <img src="https://i.imgur.com/xwUb5l5.jpeg" alt="Salade" loading="lazy"/>
+        <div class="gallery-overlay"><span class="gallery-zoom" aria-hidden="true">🔍</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Aperçu photo">
+  <button class="lb-close" onclick="closeLb()" aria-label="Fermer">✕</button>
+  <img id="lbImg" src="" alt="Photo"/>
+</div>
+
+<div class="section-divider divider-strip reveal">
+  <div class="strip-photos">
+    <div class="strip-tile" style="background-image:url(https://i.imgur.com/AA5qLX8.png)"></div>
+    <div class="strip-tile" style="background-image:url(https://img.cuisineaz.com/1200x900/2019/04/17/i146583-tacos-poulet-curry.webp)"></div>
+    <div class="strip-tile" style="background-image:url(https://i.imgur.com/Mzy1H4Z.png)"></div>
+  </div>
+  <div class="strip-overlay"></div>
+  <div class="strip-caption">
+    <span class="strip-eyebrow">Ingrédients frais</span>
+    <span class="strip-title">Cuisinés chaque jour avec passion</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ REVIEWS ═══════════════════════════════════════════ -->
+<section class="section reviews-section" id="reviews">
+  <div class="section-inner">
+    <div class="reveal" style="margin-bottom:1rem">
+      <p class="section-eyebrow" data-key="reviews-eyebrow">Témoignages</p>
+      <h2 class="section-title" data-key="reviews-title">Ce que disent nos clients</h2>
+    </div>
+    <div class="rating-hero reveal d1">
+      <div class="rating-score">3.6</div>
+      <div>
+        <div class="rating-stars-row" aria-label="3,6 sur 5 étoiles">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          <span class="star" style="opacity:0.5">★</span><span class="star empty">★</span>
+        </div>
+        <div class="rating-base" data-key="rating-base">Basé sur 31 avis Google</div>
+      </div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-quote" aria-hidden="true">"</div>
+        <div class="review-stars" aria-label="5 sur 5"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="review-text" data-key="rev1-text">Excellente shawarma, service rapide et personnel accueillant. Je recommande vivement cet endroit à tous !</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">KA</div>
+          <div>
+            <div class="review-name" data-key="rev1-name">Karim Amrani</div>
+            <div class="review-date" data-key="rev1-date">il y a 2 mois</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal d1">
+        <div class="review-quote" aria-hidden="true">"</div>
+        <div class="review-stars" aria-label="4 sur 5"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star empty">★</span></div>
+        <p class="review-text" data-key="rev2-text">أفضل شاورما جربتها في المدينة، الخدمة ممتازة والطعام لذيذ. الأسعار معقولة وجودة عالية.</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">SB</div>
+          <div>
+            <div class="review-name" data-key="rev2-name">Sara Benali</div>
+            <div class="review-date" data-key="rev2-date">il y a 3 mois</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal d2">
+        <div class="review-quote" aria-hidden="true">"</div>
+        <div class="review-stars" aria-label="4 sur 5"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star" style="opacity:0.4">★</span></div>
+        <p class="review-text" data-key="rev3-text">Les tacos crispy sont incroyables ! Le rapport qualité-prix est excellent. Livraison ponctuelle.</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">YB</div>
+          <div>
+            <div class="review-name" data-key="rev3-name">Yacine Boudiaf</div>
+            <div class="review-date" data-key="rev3-date">il y a 1 mois</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal d3">
+        <div class="review-quote" aria-hidden="true">"</div>
+        <div class="review-stars" aria-label="5 sur 5"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="review-text" data-key="rev4-text">المكان نظيف والموظفون محترمون. وجبة الأسرة ممتازة وكافية للجميع. سنعود بالتأكيد.</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">NZ</div>
+          <div>
+            <div class="review-name" data-key="rev4-name">Nadia Ziani</div>
+            <div class="review-date" data-key="rev4-date">il y a 5 mois</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal d4">
+        <div class="review-quote" aria-hidden="true">"</div>
+        <div class="review-stars" aria-label="3,5 sur 5"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star" style="opacity:0.5">★</span><span class="star empty">★</span></div>
+        <p class="review-text" data-key="rev5-text">Bon endroit pour manger en famille. La shawarma est bien garnie et les frites croustillantes.</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">MH</div>
+          <div>
+            <div class="review-name" data-key="rev5-name">Mohamed Hadjadj</div>
+            <div class="review-date" data-key="rev5-date">il y a 4 mois</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal d2">
+        <div class="review-quote" aria-hidden="true">"</div>
+        <div class="review-stars" aria-label="5 sur 5"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="review-text" data-key="rev6-text">شاورما رائعة بحق! الخبز طازج والصلصة ممتازة. أنصح بتجربة الطبق العربي.</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">RK</div>
+          <div>
+            <div class="review-name" data-key="rev6-name">Rachid Khelil</div>
+            <div class="review-date" data-key="rev6-date">il y a 6 mois</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider divider-ornament reveal">
+  <span class="orn-line"></span>
+  <span class="orn-mark">
+    <svg viewBox="0 0 60 24" aria-hidden="true">
+      <path d="M2 12 H22" stroke="currentColor" stroke-width="1"/>
+      <path d="M38 12 H58" stroke="currentColor" stroke-width="1"/>
+      <path d="M30 2 L34 12 L30 22 L26 12 Z" fill="currentColor"/>
+      <circle cx="30" cy="12" r="2" fill="#FFF9F2"/>
+    </svg>
+    <span class="orn-mono">LGP</span>
+  </span>
+  <span class="orn-line"></span>
+</div>
+
+<!-- ═══════════════════════════════════════════ CONTACT ═══════════════════════════════════════════ -->
+<section class="section contact-section" id="contact">
+  <div class="section-inner">
+    <div class="reveal" style="margin-bottom:3rem">
+      <p class="section-eyebrow" data-key="contact-eyebrow">Nous trouver</p>
+      <h2 class="section-title" data-key="contact-title">Contact &amp; Localisation</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-block">
+        <div class="contact-item reveal">
+          <div class="contact-icon-wrap" aria-hidden="true">📍</div>
+          <div>
+            <div class="contact-label" data-key="contact-addr-label">Adresse</div>
+            <div class="contact-value">Ave Mohamed Khamista<br/>Sidi Bel Abbès 22000, Algérie</div>
+          </div>
+        </div>
+        <div class="contact-item reveal d1">
+          <div class="contact-icon-wrap" aria-hidden="true">📞</div>
+          <div>
+            <div class="contact-label" data-key="contact-phone-label">Téléphone</div>
+            <div class="contact-value"><a href="tel:+213549526900">0549 52 69 00</a></div>
+          </div>
+        </div>
+        <div class="contact-item reveal d2">
+          <div class="contact-icon-wrap" aria-hidden="true">💬</div>
+          <div>
+            <div class="contact-label">WhatsApp</div>
+            <div class="contact-value"><a href="https://wa.me/213549526900" target="_blank" rel="noopener" data-key="contact-wa-val">Envoyer un message</a></div>
+          </div>
+        </div>
+        <div class="contact-item reveal d3">
+          <div class="contact-icon-wrap" aria-hidden="true">🕐</div>
+          <div>
+            <div class="contact-label" data-key="contact-hours-label">Horaires</div>
+            <div class="contact-value" data-key="contact-hours-val">Ouvert tous les jours<br/><strong style="color:var(--crimson)">Jusqu'à minuit</strong></div>
+          </div>
+        </div>
+        <div class="reveal d4">
+          <div class="services-chips">
+            <span class="chip" data-key="chip1">🍽 Sur place</span>
+            <span class="chip" data-key="chip2">🛍 À emporter</span>
+            <span class="chip" data-key="chip3">🚴 Livraison</span>
+          </div>
+        </div>
+      </div>
+      <div class="map-wrap reveal d2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.2!2d-0.6313!3d35.1906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDExJzI2LjIiTiAwwrAzNyc1Mi43Ilc!5e0!3m2!1sfr!2sdz!4v1700000000000"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Restaurant Le Grand Prado — carte">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider divider-marquee" aria-hidden="true">
+  <div class="marquee-track"><span>Sidi Bel Abbès</span><span class="dot">✦</span><span>Ouvert jusqu'à minuit</span><span class="dot">✦</span><span>À emporter</span><span class="dot">✦</span><span>Sur place</span><span class="dot">✦</span><span>Livraison</span><span class="dot">✦</span><span>مطعم لو غراند برادو</span><span class="dot">✦</span><span>Sidi Bel Abbès</span><span class="dot">✦</span><span>Ouvert jusqu'à minuit</span><span class="dot">✦</span><span>À emporter</span><span class="dot">✦</span><span>Sur place</span><span class="dot">✦</span><span>Livraison</span><span class="dot">✦</span><span>مطعم لو غراند برادو</span><span class="dot">✦</span><span>Sidi Bel Abbès</span><span class="dot">✦</span><span>Ouvert jusqu'à minuit</span><span class="dot">✦</span><span>À emporter</span><span class="dot">✦</span><span>Sur place</span><span class="dot">✦</span><span>Livraison</span><span class="dot">✦</span><span>مطعم لو غراند برادو</span><span class="dot">✦</span></div>
+</div>
+
+<!-- ═══════════════════════════════════════════ FOOTER ═══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">Restaurant Le Grand Prado</div>
+      <div class="footer-brand-sub" data-key="footer-sub">Shawarma &amp; Fast-Food · Sidi Bel Abbès</div>
+      <p class="footer-brand-desc" data-key="footer-desc">
+        Shawarma authentique préparée chaque jour avec des ingrédients frais. Livraison, sur place et à emporter.
+      </p>
+      <div class="footer-social">
+        <a href="https://wa.me/213549526900" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L0 24l6.335-1.507A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.79 9.79 0 0 1-4.988-1.364l-.356-.212-3.762.895.956-3.67-.234-.376A9.782 9.782 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+        </a>
+        <a href="tel:+213549526900" class="social-icon" aria-label="Téléphone">📞</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title" data-key="footer-nav-title">Navigation</div>
+      <ul class="footer-links">
+        <li><a href="#hero"    data-key="nav-home">Accueil</a></li>
+        <li><a href="#about"   data-key="nav-about">À propos</a></li>
+        <li><a href="#menu"    data-key="nav-menu">Menu</a></li>
+        <li><a href="#gallery" data-key="nav-gallery">Galerie</a></li>
+        <li><a href="#reviews" data-key="nav-reviews">Avis</a></li>
+        <li><a href="#contact" data-key="nav-contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-hours-col">
+      <div class="footer-col-title" data-key="footer-hours-title">Horaires</div>
+      <ul class="footer-links">
+        <li><span style="color:rgba(255,255,255,0.5)" data-key="footer-days">Tous les jours</span></li>
+        <li><span style="color:var(--gold)" data-key="footer-until">Ouvert jusqu'à minuit</span></li>
+        <li style="margin-top:1rem"><a href="tel:+213549526900" style="color:rgba(255,255,255,0.5)">0549 52 69 00</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-divider"></div>
+  <div class="footer-bottom">
+    <span class="footer-copy" data-key="footer-copy">© 2026 Restaurant Le Grand Prado. Tous droits réservés.</span>
+    <div class="footer-gold-line" aria-hidden="true"></div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/213549526900" target="_blank" rel="noopener" class="fab-wa" aria-label="Commander sur WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L0 24l6.335-1.507A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.79 9.79 0 0 1-4.988-1.364l-.356-.212-3.762.895.956-3.67-.234-.376A9.782 9.782 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
